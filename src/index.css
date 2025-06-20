@@ -71,6 +71,7 @@
   }
 
   .btn-primary {
-    @apply bg-honey-gradient text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold-400/30;
+    background: linear-gradient(135deg, #facc15 0%, #eab308 50%, #ca8a04 100%);
+    @apply text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold-400/30;
   }
 }
