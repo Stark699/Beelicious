@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ShoppingCart, Menu, X } from 'lucide-react';
@@ -25,7 +24,6 @@ const Navigation = () => {
     { name: 'Products', path: '/products' },
     { name: 'About', path: '/about' },
     { name: 'Health Benefits', path: '/health-benefits' },
-    { name: 'Recipes', path: '/recipes' },
     { name: 'Contact', path: '/contact' },
   ];
 
