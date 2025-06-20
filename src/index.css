@@ -74,4 +74,36 @@
     background: linear-gradient(135deg, #facc15 0%, #eab308 50%, #ca8a04 100%);
     @apply text-black font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gold-400/30;
   }
+
+  /* Bee wing flutter animation */
+  @keyframes flutter {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.8); }
+  }
+
+  .bee-wing {
+    animation: flutter 0.3s ease-in-out infinite;
+  }
+
+  /* Honey drip effect */
+  @keyframes honey-drop {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  .honey-drop {
+    animation: honey-drop 4s ease-in infinite;
+  }
 }

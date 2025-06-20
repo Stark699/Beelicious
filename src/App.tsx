@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,6 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/hooks/useCart";
 import Navigation from "@/components/Navigation";
+import HoneyPourAnimation from "@/components/HoneyPourAnimation";
+import FlyingBees from "@/components/FlyingBees";
+import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
 import Products from "@/pages/Products";
 import ProductDetail from "@/pages/ProductDetail";
@@ -27,6 +29,8 @@ const App = () => (
         <CartProvider>
           <div className="min-h-screen bg-black text-white">
             <Navigation />
+            <HoneyPourAnimation />
+            <FlyingBees />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
@@ -38,6 +42,7 @@ const App = () => (
               <Route path="/checkout" element={<Checkout />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer />
           </div>
         </CartProvider>
       </BrowserRouter>
